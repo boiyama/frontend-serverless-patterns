@@ -1,0 +1,46 @@
+{
+  "Comment": "",
+  "Origins": {
+    "Items": [
+      {
+        "S3OriginConfig": {
+          "OriginAccessIdentity":
+            "origin-access-identity/cloudfront/E25HNNWD45X2J2"
+        },
+        "Id": "origin",
+        "DomainName": "boiyaa-spa-aws.s3.amazonaws.com"
+      }
+    ],
+    "Quantity": 1
+  },
+  "DefaultRootObject": "index.html",
+  "PriceClass": "PriceClass_All",
+  "Enabled": true,
+  "DefaultCacheBehavior": {
+    "TrustedSigners": {
+      "Enabled": false,
+      "Quantity": 0
+    },
+    "TargetOriginId": "origin",
+    "ViewerProtocolPolicy": "allow-all",
+    "ForwardedValues": {
+      "Cookies": {
+        "Forward": "none"
+      },
+      "QueryString": false
+    },
+    "MinTTL": 0,
+    "Compress": true
+  },
+  "CallerReference": "distribution-boiyaa-spa-aws",
+  "CustomErrorResponses": {
+    "Items": [
+      {
+        "ErrorCode": 404,
+        "ResponsePagePath": "/index.html",
+        "ResponseCode": "200"
+      }
+    ],
+    "Quantity": 1
+  }
+}
