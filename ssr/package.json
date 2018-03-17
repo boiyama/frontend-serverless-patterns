@@ -1,0 +1,25 @@
+{
+  "name": "boiyaa-ssr",
+  "version": "1.0.0",
+  "description": "Simple SSR",
+  "repository": "https://github.com/boiyaa/frontend-serverless-patterns.git",
+  "license": "MIT",
+  "engines": {
+    "node": "8"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "firebase:copy-next": "cp -r .next functions",
+    "firebase:serve": "npm run firebase:copy-next && firebase serve --only functions,hosting",
+    "firebase:deploy": "npm run firebase:copy-next && firebase deploy",
+    "firebase:logs": "firebase functions:log"
+  },
+  "dependencies": {
+    "next": "^5.0.1-canary.16",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {}
+}

@@ -2,7 +2,7 @@
 
 ## Set-up
 
-* Install Google Cloud SDK
+* Install Google Cloud SDK  
   Doc: https://cloud.google.com/sdk/downloads#interactive
 
 ```sh
@@ -36,7 +36,7 @@ $ gcloud config set project [PROJECT_ID]
 $ gcloud app create
 ```
 
-* Create app.yaml for static website
+* Create app.yaml for static website  
   Doc: https://cloud.google.com/appengine/docs/standard/php/getting-started/hosting-a-static-website
 
 ```sh

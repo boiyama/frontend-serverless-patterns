@@ -1,0 +1,14 @@
+{
+  "functions": {
+    "predeploy": ["npm install"]
+  },
+  "hosting": {
+    "public": "static",
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "index"
+      }
+    ]
+  }
+}

@@ -17,7 +17,7 @@ $ firebase login
 
 ## Configure Infrastructure
 
-* Create Firebase configuration file
+* Create Firebase configuration file  
   Doc: https://firebase.google.com/docs/hosting/quickstart
 
 ```sh

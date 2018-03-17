@@ -3,7 +3,7 @@
 ## Set-up
 
 * Install Python
-* Install AWS CLI
+* Install AWS CLI  
   Doc: https://docs.aws.amazon.com/cli/latest/userguide/installing.html
 
 ```sh
@@ -30,7 +30,7 @@ $ aws configure set preview.cloudfront true
 $ aws s3api create-bucket --bucket [BUCKET_NAME]
 ```
 
-* Create CloudFront OAI
+* Create CloudFront OAI  
   Doc: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html#private-content-creating-oai
 
 ```sh
@@ -41,7 +41,7 @@ $ aws cloudfront create-cloud-front-origin-access-identity --cloud-front-origin-
 ...
 ```
 
-* Configure Bucket Policy
+* Configure Bucket Policy  
   Doc: https://docs.aws.amazon.com/AmazonS3/latest/dev/example-bucket-policies.html#example-bucket-policies-use-case-6
 
 ```sh
