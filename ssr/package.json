@@ -11,8 +11,13 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "firebase:copy-next": "cp -r .next functions",
-    "firebase:serve": "npm run firebase:copy-next && firebase serve --only functions,hosting",
+    "aws:deploy":
+      "cp -r next aws && cd aws && npm install && zip -qr index.zip * && aws s3 cp index.zip s3://boiyaa-ssr-aws/index.zip && aws lambda update-function-code --function-name boiyaa-ssr-aws --s3-bucket boiyaa-ssr-aws --s3-key index.zip",
+    "aws:logs":
+      "LOG_STREAM_NAME=`aws logs describe-log-streams --log-group-name /aws/lambda/boiyaa-ssr-aws --order-by LastEventTime --descending --max-items 1 --query logStreams[0].logStreamName --output text` && LOG_STREAM_NAME=${LOG_STREAM_NAME/None/} && LOG_STREAM_NAME=${LOG_STREAM_NAME/$/} && aws logs get-log-events --log-group-name /aws/lambda/boiyaa-ssr-aws --log-stream-name ${LOG_STREAM_NAME/LATEST/\\$LATEST} --query events[].[timestamp,message] --output text",
+    "firebase:copy-next": "cp -r next functions",
+    "firebase:serve":
+      "npm run firebase:copy-next && firebase serve --only functions,hosting",
     "firebase:deploy": "npm run firebase:copy-next && firebase deploy",
     "firebase:logs": "firebase functions:log"
   },

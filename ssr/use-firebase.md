@@ -113,7 +113,7 @@ exports.index = functions.https.onRequest((request, response) =>
 ## Deploy
 
 ```sh
-$ cp -r .next functions
+$ cp -r next functions
 $ firebase deploy
 ...
 Hosting URL: https://[PROJECT_NAME].firebaseapp.com
