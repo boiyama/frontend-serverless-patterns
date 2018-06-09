@@ -1,0 +1,12 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "spa/package.json",
+        "ssr/aws/package.json",
+        "ssr/functions/package.json",
+        "ssr/package.json"
+      ]
+    }
+  }
+}
