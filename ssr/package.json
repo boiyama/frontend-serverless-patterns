@@ -22,7 +22,7 @@
     "firebase:logs": "firebase functions:log"
   },
   "dependencies": {
-    "next": "^5.0.1-canary.16",
+    "next": "^6.0.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
