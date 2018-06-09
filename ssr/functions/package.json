@@ -5,9 +5,9 @@
   "repository": "https://github.com/boiyaa/frontend-serverless-patterns.git",
   "license": "MIT",
   "dependencies": {
-    "firebase-admin": "~5.10.0",
-    "firebase-functions": "^0.8.2",
-    "next": "^5.0.1-canary.16",
+    "firebase-admin": "~5.12.1",
+    "firebase-functions": "^1.0.4",
+    "next": "^6.0.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
